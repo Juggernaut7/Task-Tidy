@@ -1,0 +1,16 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+
+# Optional build folders (if you build before deployment)
+dist
+build
+
+# IDE settings (if using VSCode)
+.vscode
+node_modules
+.env

@@ -1,0 +1,39 @@
+/* src/app/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles for the entire application */
+
+html, body, #root, .App {
+  height: 100%; /* Ensures that min-h-screen utility classes work correctly */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Default (Light Mode) Styling */
+  @apply bg-gray-100 text-gray-900; /* Light background, dark text (Tailwind defaults) */
+  font-family: 'Inter', sans-serif; /* A modern, clean font - ensure it's imported or available */
+  -webkit-font-smoothing: antialiased; /* Improves font rendering on macOS */
+  -moz-osx-font-smoothing: grayscale; /* Improves font rendering on macOS */
+}
+
+/* Dark Mode Styling (applied when 'dark' class is on the html element) */
+html.dark body {
+  @apply bg-gray-900 text-gray-100; /* Dark background, light text (Tailwind defaults) */
+}
+
+/* Smooth transition for background and text colors when switching modes */
+html {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* You can add more global component styles here if desired, e.g., for buttons, cards */
+/*
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 rounded-md bg-brand-primary-500 text-white hover:bg-brand-primary-600 transition-colors duration-200;
+  }
+}
+*/
