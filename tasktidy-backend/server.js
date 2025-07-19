@@ -23,6 +23,10 @@ mongoose.connect(MONGODB_URI)
 
 // Import Task Model
 const Task = require('./models/Task');
+app.get('/', (req, res) => {
+    res.send('TaskTidy Backend API is running!');
+}); 
+
 
 // --- API Routes ---
 
