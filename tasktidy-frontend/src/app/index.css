@@ -11,6 +11,9 @@ html, body, #root, .App {
   padding: 0;
 }
 
+
+
+
 body {
   /* Default (Light Mode) Styling */
   @apply bg-gray-100 text-gray-900; /* Light background, dark text (Tailwind defaults) */

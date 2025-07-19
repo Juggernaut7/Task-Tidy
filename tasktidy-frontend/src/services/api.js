@@ -2,7 +2,7 @@
 import axios from 'axios';
 // import { getAuthToken } from '../utils/auth'; // Uncomment if backend requires a token
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://task-tidy-4wgp.vercel.app";
 
 const api = axios.create({
     baseURL: API_BASE_URL,
